@@ -366,7 +366,11 @@ Full-Width Styles
   background: #212121;
 }
 
-
+.reddit_button {
+  float: left;
+  width: 135px;
+  font-size: 11px;
+}
 
 /*******************************************************************************
 Small Device Styles
