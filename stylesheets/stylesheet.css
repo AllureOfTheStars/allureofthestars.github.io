@@ -359,7 +359,8 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #footer_wrap {
@@ -368,8 +369,7 @@ Full-Width Styles
 
 .reddit_button {
   float: left;
-  width: 135px;
-  font-size: 11px;
+  width: 160px;
 }
 
 /*******************************************************************************
