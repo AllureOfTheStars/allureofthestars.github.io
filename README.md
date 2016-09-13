@@ -1,4 +1,4 @@
 allureofthestars.github.io
 ==========================
 
-The landing page for allureofthestars.com.
+The landing page for http://allureofthestars.com.
