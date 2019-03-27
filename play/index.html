@@ -21,47 +21,60 @@
     <meta property="og:type" content="website">
 
     <meta name="description" content="Allure of the Stars : near-future Sci-Fi roguelike and tactical squad game" />
-    <meta name="keywords" content="roguelike, squad, tactical, turnbased, ASCII, browsergame, HTML5, freesoftware, scifi, indiedev, gamedev, Haskell, PCG, replayability" >
+    <meta name="keywords" content="roguelike, squad, turnbased, turnbased tactics, ASCII, browsergame, HTML5, freesoftware, stealth, scifi, indiedev, gamedev, Haskell, PCG, replayability" >
 
     <title>Allure of the Stars</title>
 
 <style type="text/css">
 
-  // Speed: http://www.w3.org/TR/CSS21/tables.html#fixed-table-layout
-  // doesn't work:
-  // table { padding:0 0 0 0;border-spacing:0;border:none;table-layout:fixed;outline:1px solid grey;border-collapse:collapse;margin-left:auto;margin-right:auto; }
-  table tr { padding:0 0 0 0;border-spacing:0;border:none; }
-  table td { padding:0 0 0 0;border-spacing:0;border:1px solid transparent; }
+  /* Speed: <http://www.w3.org/TR/CSS21/tables.html#fixed-table-layout> */
+  table { table-layout:fixed;border-collapse:collapse;border:none;margin-left:1px; }
+  /* The nudge by one pixel above is needed on my Chrome to prevent
+     anti-aliasing that sometimes kicks in, ignoring hinting. */
+  tr, td { table-layout:fixed;border-collapse:collapse;margin-left:0;margin-right:0;font-family:lambdaHackFont;font-size:16px;padding:0 0 0 0;border:1px solid #000000; }
 
 @font-face {
     font-family: lambdaHackFont;
-    src: url("Fix15Mono-Bold.woff");
-    font-weight: bold;
-}
+    src: url("16x16xw.woff");
+  }
+
+a:link           { color: #FFFFFF }  /* unvisited links       */
+a:visited        { color: #B8BFCB }  /* visited links         */
+a:hover, a:focus { color: #FFFFFF }  /* user hovers, or focus */
+a:active         { color: #FFFFFF }  /* active links          */
 
 </style>
 
   </head>
-  <body style="color:#C5BCB8; background:#000000;">
+  <body style="color:#C4BEB1; background:#000000; font-family:lambdaHackFont">
 
-    <div style="text-align:center;">
+<table>
+    <tr>
+      <td>
       <h1>
-        In-browser (preferably Chrome) Allure of the Stars
+       Allure&nbspof&nbspthe&nbspStars&nbsp
       </h1>
-      <h3>
-        You may want to read
-        <a href="https://github.com/AllureOfTheStars/Allure/blob/master/GameDefinition/PLAYING.md" >PLAYING</a>
-        or download
-        <a href="http://www.allureofthestars.com" >a faster binary</a>.
+      </td>
+        <td>
+      <h4>
+        Press '?' for in-game help and/or read
+        <a href="https://github.com/AllureOfTheStars/Allure/blob/master/GameDefinition/PLAYING.md" >PLAYING</a>.
+        The game lags on any browser except Chrome, but you can download a fast
+        <a href="http://www.allureofthestars.com" >native binary</a>.
         If the game window is too large for your screen,
         zoom out (Control-minus).
-      </h1>
-    </div>
-    <div style="text-align:center;" id="pleaseWait">
-<div style="text-align:left;display:inline-block;">
+      </h4>
+        </td>
+    </tr>
+</table>
+
+    <div style="text-align:center">
+  <div style="display:inline-block;" id="gameMap">
+<div style="text-align:left;font-size:16px;" id="pleaseWait">
   Please wait. Bleeding edge experimental technology of the future is being loaded, <br>
   which may take 10 or 20 seconds with no apparent progress. <br>
-  Be patient. Do not make hasty keystrokes.
+  Be patient. Do not make hasty keystrokes. Breathtaking letters <br>
+  in sixteen brilliant colors and HD resolution beckon from the other shore.
 <p>
 from README: <br>
 The game runs rather slowly in the browser (fastest on Chrome) <br>
@@ -75,8 +88,8 @@ you may prefer to use a native binary for your architecture, if it exists.
 <p>
 Copyright (c) 2008--2019 Andres Loeh, Mikolaj Konarski and others (see git history)
 </div>
+  </div>
     </div>
-
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
