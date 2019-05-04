@@ -52,14 +52,14 @@ body {
   box-sizing: border-box;
   color:#373737;
   background: #212121;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 12px 0;
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
@@ -67,34 +67,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 700;
 }
 
 h2 {
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 40px;
   background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 26px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 p {
-  margin: 10px 0 15px 0;
+  margin: 12px 0 18px 0;
 }
 
 footer p {
@@ -138,7 +138,7 @@ img {
   margin: 0 auto;
 <!--   max-width: 739px;  -->
   padding: 5px;
-  margin: 10px 0 10px 0;
+  margin: 12px 0 12px 0;
   border: 1px solid #ebebeb;
 
   box-shadow: 0 0 5px #ebebeb;
@@ -163,7 +163,7 @@ pre, code {
   background-color: #fff;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
+  font-size: 17px;
 
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -264,8 +264,8 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
-  padding: 20px 10px;
+  max-width: 800px;
+  padding: 25px 10px;
   margin: 0 auto;
 }
 
@@ -294,20 +294,20 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 62px 10px 37px 10px;
 }
 
 #project_title {
   margin: 0;
   color: #fff;
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
   color: #fff;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
@@ -315,7 +315,7 @@ Full-Width Styles
 
 #downloads {
   position: absolute;
-  width: 210px;
+  width: 272px;
   z-index: 10;
   bottom: -40px;
   right: 0;
@@ -326,7 +326,7 @@ Full-Width Styles
 .zip_download_link {
   display: block;
   float: right;
-  width: 90px;
+  width: 112px;
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
@@ -336,12 +336,12 @@ Full-Width Styles
 .tar_download_link {
   display: block;
   float: right;
-  width: 90px;
+  width: 112px;
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .zip_download_link:hover {
@@ -369,12 +369,12 @@ Full-Width Styles
 
 .reddit_button {
   float: left;
-  width: 160px;
+  width: 200px;
 }
 
 .header_img {
   float: left;
-  width: 135px;
+  width: 168px;
 }
 
 /*******************************************************************************
