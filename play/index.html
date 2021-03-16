@@ -25,6 +25,8 @@
 
     <title>Allure of the Stars</title>
 
+<link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+
 <style type="text/css">
 
   /* Speed: <http://www.w3.org/TR/CSS21/tables.html#fixed-table-layout> */
@@ -44,10 +46,16 @@ a:visited        { color: #B8BFCB }  /* visited links         */
 a:hover, a:focus { color: #FFFFFF }  /* user hovers, or focus */
 a:active         { color: #FFFFFF }  /* active links          */
 
+.cactus-editor-textarea {background-color:black;color:white}
+
+.cactus-button {background-color:grey}
+
 </style>
 
   </head>
   <body style="color:#C4BEB1; background:#000000; font-family:lambdaHackFont">
+
+    <div>
 
 <table>
     <tr>
@@ -57,13 +65,13 @@ a:active         { color: #FFFFFF }  /* active links          */
       </h1>
       </td>
         <td>
-      <h4 style="line-height:130%">
-        Press '?' for in-game help and/or read
+      <h4 style="line-height:120%">
+        Press '?' for in-game help or read
         <a href="https://github.com/AllureOfTheStars/Allure/blob/master/GameDefinition/PLAYING.md" >PLAYING</a>.
-        The game may lag in a browser, but you can download a fast
-        <a href="http://www.allureofthestars.com" >native binary</a>
-        which also has proportional fonts and fullscreen support.
-        If the game window is too large for your screen, zoom out
+        The game may lag in a&nbsp;browser, but you can download
+        a&nbsp;<a href="http://www.allureofthestars.com" >native binary</a>
+        that is fast, has proportional fonts and can display in fullscreen.
+        If the game window is too large, zoom out
         (Control-minus) or use the native executable with 8-pixel fonts.
         Press NumLock if numpad erratic or use another key scheme or mouse.
       </h4>
@@ -71,8 +79,12 @@ a:active         { color: #FFFFFF }  /* active links          */
     </tr>
 </table>
 
+    </div>
+
     <div style="text-align:center">
-  <div style="display:inline-block;" id="gameMap">
+  <div style="display:inline-block;">
+  <div style="display:inline-block;" tabindex="0" id="gameMap">
+  &nbsp;
 <div style="text-align:left;font-size:16px;line-height:120%" id="pleaseWait">
 <p>
   Please wait. Bleeding edge experimental technology of the future is being loaded, <br>
@@ -90,8 +102,29 @@ you may prefer to use a native binary for your architecture, if it exists.
 <p>
 Copyright (c) 2008--2021 Andres Loeh, Mikolaj Konarski and others (see git history)
 </div>
+  &nbsp;
   </div>
+
+<div style="text-align:left">
+
+<p>
+  &nbsp;
+<p>
+  &nbsp;
+<p>
+
+  I hope you have fun playing. Regardless, please leave some (anonymous) feedback below.
+
+</div>
+
+<div id="comments"></div>
+
+  </div>
+
     </div>
+
+    <script language="javascript" src="lz-string.min.js"></script>
+    <script language="javascript" src="allure.all.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -103,8 +136,17 @@ Copyright (c) 2008--2021 Andres Loeh, Mikolaj Konarski and others (see git histo
   ga('send', 'pageview');
 </script>
 
-    <script language="javascript" src="lz-string.min.js"></script>
-    <script language="javascript" src="allure.all.js"></script>
+<script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+
+<script>
+initComments({
+  node: document.getElementById("comments"),
+  defaultHomeserverUrl: "https://chat.mozilla.org",
+  serverName: "mozilla.org",
+  siteName: "allureofthestars.com",
+  commentSectionId: "about-Allure-of-the-Stars-the-game"
+})
+</script>
 
   </body>
 </html>
